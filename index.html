@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Eagles College, Kwekwe</title>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;800&family=Public+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#12233f;--gold:#c9972b;--bg:#f7f6f2;--surface:#fff;--ink:#1c2433;--muted:#5b6577;--line:#dcdad2;--hero-ink:#fff;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--navy:#0b1730;--gold:#e0b04a;--bg:#0f1624;--surface:#172134;--ink:#e8ebf2;--muted:#9aa5ba;--line:#2a3550;}}
+:root[data-theme="dark"]{--navy:#0b1730;--gold:#e0b04a;--bg:#0f1624;--surface:#172134;--ink:#e8ebf2;--muted:#9aa5ba;--line:#2a3550;}
+html{scroll-padding-top:70px;scroll-behavior:smooth}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 16px/1.6 "Public Sans",system-ui,sans-serif}
+h1,h2,h3{font-family:Fraunces,Georgia,serif;line-height:1.15;margin:0 0 .5em}
+a{color:inherit}
+.wrap{max-width:1040px;margin:0 auto;padding:0 20px}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--navy);color:#fff}
+header .wrap{display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:56px;flex-wrap:wrap}
+.brand{font:800 20px Fraunces,Georgia,serif;text-decoration:none}
+nav{display:flex;gap:18px;flex-wrap:wrap;font-size:15px}
+nav a{text-decoration:none;opacity:.9;padding:4px 0}
+nav a:hover,nav a:focus-visible{opacity:1;text-decoration:underline;text-decoration-color:var(--gold)}
+nav a.cta{background:var(--gold);color:#12233f;padding:4px 14px;border-radius:99px;font-weight:600;opacity:1}
+.hero{background:var(--navy);color:#fff;padding:72px 0 80px;border-bottom:6px solid var(--gold)}
+.hero h1{font-size:clamp(34px,6vw,60px);font-weight:800;max-width:15em}
+.hero p{max-width:38em;font-size:18px;color:#d5dbe8}
+.btns{display:flex;gap:12px;flex-wrap:wrap;margin-top:24px}
+.btn{display:inline-block;border:2px solid var(--gold);background:var(--gold);color:#12233f;padding:10px 22px;border-radius:6px;font:600 16px "Public Sans",sans-serif;text-decoration:none;cursor:pointer}
+.btn.ghost{background:transparent;color:#fff}
+.btn:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible,a:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
+section{padding:60px 0}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:18px}
+.box{background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:20px}
+.box h3{font-size:20px}
+.muted{color:var(--muted)}
+.notice{border-left:4px solid var(--gold);background:var(--surface);padding:14px 18px;margin-bottom:12px;border-radius:0 8px 8px 0}
+#portal{background:var(--navy);color:#fff}
+#portal .muted{color:#b9c3d8}
+.login{background:var(--surface);color:var(--ink);border-radius:10px;padding:24px;max-width:420px}
+label{display:block;font-weight:600;margin:12px 0 4px;font-size:14px}
+input,select,textarea{width:100%;padding:10px 12px;border:1px solid var(--line);border-radius:6px;background:var(--bg);color:var(--ink);font:inherit}
+.err{color:#b3261e;font-size:14px;min-height:20px;margin-top:8px}
+@media (prefers-color-scheme:dark){.err{color:#ff9b93}}
+.report{background:var(--surface);color:var(--ink);border-radius:10px;padding:24px;margin-top:8px}
+.rhead{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;border-bottom:2px solid var(--gold);padding-bottom:12px;margin-bottom:12px}
+.tscroll{overflow-x:auto}
+table{width:100%;border-collapse:collapse;min-width:420px}
+th,td{padding:9px 10px;text-align:left;border-bottom:1px solid var(--line)}
+td.n,th.n{text-align:right;font-variant-numeric:tabular-nums}
+.g{display:inline-block;min-width:28px;text-align:center;font-weight:600;border-radius:4px;padding:1px 6px;background:var(--bg);border:1px solid var(--line)}
+.summary{display:flex;gap:28px;flex-wrap:wrap;margin-top:16px}
+.summary b{display:block;font:800 26px Fraunces,Georgia,serif}
+.hidden{display:none}
+footer{background:var(--navy);color:#c9d1e2;padding:32px 0;font-size:14px}
+footer a{color:var(--gold)}
+@media print{header,.hero,section:not(#portal),footer,.login,.noprint{display:none!important}#portal{background:#fff;padding:0}.report{box-shadow:none}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<header>
+<div class="wrap">
+<a class="brand" href="#top">Eagles College</a>
+<nav aria-label="Main">
+<a href="#about">About</a><a href="#services">Services</a><a href="#notices">Notices</a><a href="#portal">Results</a><a href="#contact">Contact</a><a class="cta" href="#contact">Enroll now</a>
+</nav>
+</div>
+</header>
+
+<main id="top">
+<div class="hero"><div class="wrap">
+<h1>A boarding school in Kwekwe, built to help every learner soar.</h1>
+<p>Eagles College is celebrating five years of growth, achievement and community. Enroll your child at our boarding school, and check results online any time.</p>
+<div class="btns"><a class="btn" href="#portal">View results</a><a class="btn ghost" href="#contact">Enroll your child</a></div>
+</div></div>
+
+<section id="about"><div class="wrap">
+<h2>About Eagles College</h2>
+<p style="max-width:42em">Eagles College is a boarding school in Msasa North, Kwekwe, in the Midlands Province of Zimbabwe. The school marked its fifth anniversary on 21 March 2026. We work with parents and guardians to give learners a safe place to study, grow and take on the future.</p>
+<div class="grid" style="margin-top:24px">
+<div class="box"><h3>Boarding</h3><p class="muted">Learners live and study on campus, with routines that support homework, rest and character.</p></div>
+<div class="box"><h3>Community</h3><p class="muted">Five years of staff, learners and families building the school together.</p></div>
+<div class="box"><h3>Results online</h3><p class="muted">Parents and learners view term reports securely through the results portal.</p></div>
+</div>
+<p class="muted" style="font-size:14px;margin-top:16px">Text in this section is a starting draft. Replace it with the school’s own mission, history and values.</p>
+</div></section>
+
+<section id="services" style="background:var(--surface)"><div class="wrap">
+<h2>Services</h2>
+<div class="grid">
+<div class="box"><h3>Enrollment</h3><p class="muted">Contact the school office to start your child’s admission.</p></div>
+<div class="box"><h3>Boarding facilities</h3><p class="muted">Accommodation for boarders on the Msasa North campus.</p></div>
+<div class="box"><h3>Results portal</h3><p class="muted">Sign in with a student ID and PIN to view and print a term report.</p></div>
+<div class="box"><h3>Notices and news</h3><p class="muted">Announcements for parents, learners and staff.</p></div>
+</div>
+<p class="muted" style="font-size:14px;margin-top:16px">Add the exact classes, subjects and fees once confirmed.</p>
+</div></section>
+
+<section id="notices"><div class="wrap">
+<h2>Notices</h2>
+<div class="notice"><b>Enrollment is open.</b> Come and enroll your child at our boarding school.</div>
+<div class="notice"><b>Five-year anniversary.</b> Join the celebration on 21 March 2026.</div>
+</div></section>
+
+<section id="portal"><div class="wrap">
+<h2>Results portal</h2>
+<p class="muted" style="max-width:40em">Enter the student ID and PIN printed on the admission slip to see the latest term report.</p>
+
+<div class="login" id="loginBox">
+<div id="loginForm" role="group" aria-label="Sign in">
+<label for="sid">Student ID</label>
+<input id="sid" autocomplete="off" placeholder="e.g. EC2026001">
+<label for="pin">PIN</label>
+<input id="pin" type="password" inputmode="numeric" autocomplete="off" placeholder="4-digit PIN">
+<div class="err" id="err" role="alert"></div>
+<button class="btn" id="go" type="button" style="margin-top:8px;width:100%">View results</button>
+<p class="muted" style="font-size:13px;margin:12px 0 0">Demo sign-in: ID <b>EC2026001</b>, PIN <b>1234</b>. The sample data is fictional.</p>
+</div>
+</div>
+
+<div id="reportBox" class="hidden">
+<div class="report" id="report"></div>
+<div class="btns noprint">
+<button class="btn" type="button" id="print">Print report</button>
+<button class="btn ghost" type="button" id="out">Sign out</button>
+</div>
+</div>
+</div></section>
+
+<section id="contact"><div class="wrap">
+<h2>Contact and enrollment</h2>
+<div class="grid">
+<div class="box"><h3>Phone</h3><p><a href="tel:+263777352177">+263 77 735 2177</a><br>+253 78 507 0014</p></div>
+<div class="box"><h3>Email</h3><p><a href="mailto:admin@eaglescollege.co.zw">admin@eaglescollege.co.zw</a></p></div>
+<div class="box"><h3>Address</h3><p>7502 Msasa North<br>Kwekwe, Midlands<br>Zimbabwe</p></div>
+<div class="box"><h3>Social media</h3><p><a href="https://www.facebook.com/share/16ZihQBXdM/">Facebook</a><br><a href="https://www.instagram.com/eagles_college_official">Instagram</a></p></div>
+</div>
+<div class="box" style="margin-top:24px;max-width:560px">
+<h3>Send an inquiry</h3>
+<label for="cn">Your name</label><input id="cn">
+<label for="cm">Message</label><textarea id="cm" rows="4"></textarea>
+<button class="btn" type="button" id="send" style="margin-top:14px">Send message</button>
+<p class="muted" style="font-size:13px">This opens your email app with the message ready to send to the school office.</p>
+</div>
+</div></section>
+</main>
+
+<footer><div class="wrap">© 2026 Eagles College · 7502 Msasa North, Kwekwe, Zimbabwe · <a href="mailto:admin@eaglescollege.co.zw">admin@eaglescollege.co.zw</a></div></footer>
+
+<script>
+var STUDENTS={
+"EC2026001":{pin:"1234",name:"Tendai Moyo",cls:"Form 3 Blue",term:"Term 2, 2026",pos:"4 of 38",
+subjects:[["Mathematics",78,"Strong problem solving."],["English Language",71,"Good essay structure."],["Shona",84,"Excellent oral work."],["Combined Science",69,"Revise chemistry topics."],["History",74,"Well-argued answers."],["Geography",66,"Improve map skills."],["Agriculture",80,"Very good practical work."],["Computer Science",88,"Outstanding."]]}
+};
+function grade(m){return m>=80?"A":m>=70?"B":m>=60?"C":m>=50?"D":m>=40?"E":"U"}
+function esc(s){return String(s).replace(/[&<>"]/g,function(c){return{"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]})}
+function $(id){return document.getElementById(id)}
+function show(){
+var id=$("sid").value.trim().toUpperCase(),pin=$("pin").value.trim(),s=STUDENTS[id];
+if(!s||s.pin!==pin){$("err").textContent="Student ID or PIN is incorrect. Check the admission slip and try again.";return}
+$("err").textContent="";
+var total=0,rows="";
+s.subjects.forEach(function(x){total+=x[1];rows+="<tr><td>"+esc(x[0])+"</td><td class='n'>"+x[1]+"%</td><td><span class='g'>"+grade(x[1])+"</span></td><td>"+esc(x[2])+"</td></tr>"});
+var avg=(total/s.subjects.length).toFixed(1);
+$("report").innerHTML="<div class='rhead'><div><h3 style='margin:0'>Eagles College term report</h3><div class='muted'>"+esc(s.term)+"</div></div><div><b>"+esc(s.name)+"</b><br>"+esc(s.cls)+" · "+esc(id)+"</div></div>"
++"<div class='tscroll'><table><thead><tr><th>Subject</th><th class='n'>Mark</th><th>Grade</th><th>Teacher’s comment</th></tr></thead><tbody>"+rows+"</tbody></table></div>"
++"<div class='summary'><div><b>"+avg+"%</b><span class='muted'>Average</span></div><div><b>"+grade(avg)+"</b><span class='muted'>Overall grade</span></div><div><b>"+esc(s.pos)+"</b><span class='muted'>Class position</span></div></div>";
+$("loginBox").classList.add("hidden");$("reportBox").classList.remove("hidden");
+}
+$("go").onclick=show;
+$("pin").onkeydown=function(e){if(e.key==="Enter")show()};
+$("out").onclick=function(){$("report").innerHTML="";$("pin").value="";$("reportBox").classList.add("hidden");$("loginBox").classList.remove("hidden")};
+$("print").onclick=function(){window.print()};
+$("send").onclick=function(){
+var n=$("cn").value.trim(),m=$("cm").value.trim();
+if(!m){$("cm").focus();return}
+location.href="mailto:admin@eaglescollege.co.zw?subject="+encodeURIComponent("Inquiry from "+(n||"website visitor"))+"&body="+encodeURIComponent(m);
+};
+</script>
+</body>
+</html>
